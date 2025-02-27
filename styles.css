@@ -1,0 +1,78 @@
+	body { 
+            font-family: 'Baloo 2', cursive;
+            text-align: center; 
+            background-image: linear-gradient(red, white);
+            background-size: cover;
+            background-position: center;
+            padding: 20px; 
+        }
+        .container { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            display: inline-block; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: 5px solid #D31200;
+        }
+        h1 { 
+        	font-family: 'Sigmar', cursive;
+            color: #D31200;
+            font-size: 3.5rem;
+            text-shadow: 2px 2px yellow;
+        }
+        .grid { display: flex; justify-content: center; gap: 20px; margin-top: 10px; }
+        .box { 
+		   
+		    background-size: cover; 
+		    padding: 15px; 
+		    border-radius: 10px; 
+		    text-align: center; 
+		    width: 150px; 
+		    height: 180px; 
+		    display: flex; 
+		    flex-direction: column; 
+		    justify-content: center; 
+		    align-items: center; 
+		    color: black; 
+		    position: relative; 
+		}
+
+		.box::before {
+		    content: '';
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    background: rgba(255, 255, 255, 0.5); 
+		    border-radius: 10px; 
+		    z-index: 0; 
+		}
+
+		.box > * {
+		    position: relative; /* Ensure text is above the background */
+		    z-index: 1; /* Bring text above the overlay */
+		}
+        #chicken-box { background-image: url('https://i.pinimg.com/736x/2a/89/ed/2a89ed7f5c6ebba779024d16631bc653.jpg'); background-color: #D31200; }
+        #steak-box { background-image: url('https://i.pinimg.com/736x/0b/4d/32/0b4d327164a52f4d38d6f785edce2806.jpg'); background-color: #A60F00; }
+        #spag-box { background-image: url('https://i.pinimg.com/736x/6a/b6/3f/6ab63fcacc76279e59a7b16fcac0de46.jpg'); background-color: #E53935; }
+        
+        button { 
+            margin-top: 15px; 
+            padding: 12px 20px; 
+            font-size: 18px; 
+            font-weight: bold;
+            background: #D31200; 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+        button:hover { 
+            background: yellow;
+            color: #D31200;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+        }
+        img { width: 120px; margin-bottom: 10px; }

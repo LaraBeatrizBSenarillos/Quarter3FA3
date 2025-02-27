@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jollibee Order Randomizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <img src="https://i.pinimg.com/736x/bf/20/2c/bf202cdb9441eb451143ce8fe8007db7.jpg" alt="Jollibee Logo">
+    <h1>Jollibee Order Randomizer</h1>
+    <button onclick="generateData()">Generate New Order</button><br><br>
+
+    <div class="container">
+        <div class="grid">
+            <div class="box" id="chicken-box">
+                <b>Chickenjoy</b>
+                <hr>
+                <p id="chicken">-</p>
+            </div>
+            <div class="box" id="steak-box">
+                <b>Burgersteak</b>
+                <hr>
+                <p id="steak">-</p>
+            </div>
+            <div class="box" id="spag-box">
+                <b>Jolly Spaghetti</b>
+                <hr>
+                <p id="spag">-</p>
+            </div>
+        </div>
+
+        <p><b>The most popular item today is:</b> <span id="item">-</span></p>
+        <p><b>The secret ingredient of the day starts with the letter:</b> <span id="letter">-</span></p>
+        <p><b>Total preparation time:</b> <span id="time">-</span></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
